@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">My Quiz App</string>
+
+    <string name="app_header">National Things</string>
+    <string name="app_sub_header">Take the below quiz to know how much you know India</string>
+    <string name="question_1">1. Which of the following is the National Aquatic animal of India?</string>
+    <string name="answer_1_1">Alligator</string>
+    <string name="answer_1_2">River Dolphin</string>
+    <string name="answer_1_3">Cat Fish</string>
+    <string name="answer_1_4">Stripped Dolphin</string>
+    <string name="question_2">2. The National Flower of India is?</string>
+    <string name="answer_2_1">8 petalled lotus</string>
+    <string name="answer_2_2">Black Lotus</string>
+    <string name="answer_2_3">6 petalled lotus</string>
+    <string name="answer_2_4">Jasmine</string>
+    <string name="question_3">3. In which year was River Ganga declared as National River?</string>
+    <string name="answer_3_1">1947</string>
+    <string name="answer_3_2">1950</string>
+    <string name="answer_3_3">1985</string>
+    <string name="answer_3_4">2008</string>
+    <string name="question_4">4. National Emblem of India is adopted from Lion Capital of Ashoka at Sarnath. Which of the following four animals are depicted in The Lion Capital of Ashoka at Sarnath?</string>
+    <string name="answer_4_1">Lion</string>
+    <string name="answer_4_2">Elephant</string>
+    <string name="answer_4_3">Tiger</string>
+    <string name="answer_4_4">Camel</string>
+    <string name="answer_4_5">Bull</string>
+    <string name="answer_4_6">Horse</string>
+    <string name="question_5">10. The National Animal of India is?</string>
+    <string name="btn_view_score">View Score</string>
+    <string name="btn_reset">Reset</string>
+    <string name="answer_5_hint">Type an animal name</string>
+
+    <string name="score_text">Your score is %1$d</string>
+</resources>
