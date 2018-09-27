@@ -71,24 +71,24 @@ public class MainActivity extends AppCompatActivity {
 
                 editFive = findViewById(R.id.edit_five);
                 if(null != editFive && null != editFive.getText()){
-                    editFiveString = editFive.getText().toString();
+                    editFiveString = editFive.getText().toString().trim();
                 }
 
                 if(answer1 == -1){
-                    Toast.makeText(MainActivity.this, "Please Answer Question 1", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, R.string.toast_incomplete_ques_1, Toast.LENGTH_LONG).show();
                     return;
                 }else if(answer2 == -1){
-                    Toast.makeText(MainActivity.this, "Please Answer Question 2", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, R.string.toast_incomplete_ques_2, Toast.LENGTH_LONG).show();
                     return;
                 }else if(answer3 == -1){
-                    Toast.makeText(MainActivity.this, "Please Answer Question 3", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, R.string.toast_incomplete_ques_3, Toast.LENGTH_LONG).show();
                     return;
                 }else if(!checkFourOne.isChecked() && !checkFourTwo.isChecked() && !checkFourThree.isChecked() &&
                         !checkFourFour.isChecked() && !checkFourFive.isChecked() && !checkFourSix.isChecked()){
-                    Toast.makeText(MainActivity.this, "Please Answer Question 4", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, R.string.toast_incomplete_ques_4, Toast.LENGTH_LONG).show();
                     return;
                 }else if(null == editFiveString || editFiveString.equals("")){
-                    Toast.makeText(MainActivity.this, "Please Answer Question 5", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, R.string.toast_incomplete_ques_5, Toast.LENGTH_LONG).show();
                     return;
                 }
 

@@ -25,10 +25,15 @@
     <string name="answer_4_4">Camel</string>
     <string name="answer_4_5">Bull</string>
     <string name="answer_4_6">Horse</string>
-    <string name="question_5">10. The National Animal of India is?</string>
+    <string name="question_5">5. The National Animal of India is?</string>
     <string name="btn_view_score">View Score</string>
     <string name="btn_reset">Reset</string>
     <string name="answer_5_hint">Type an animal name</string>
 
     <string name="score_text">Your score is %1$d</string>
+    <string name="toast_incomplete_ques_1">Please Answer Question 1</string>
+    <string name="toast_incomplete_ques_2">Please Answer Question 2</string>
+    <string name="toast_incomplete_ques_3">Please Answer Question 3</string>
+    <string name="toast_incomplete_ques_4">Please Answer Question 4</string>
+    <string name="toast_incomplete_ques_5">Please Answer Question 5</string>
 </resources>
