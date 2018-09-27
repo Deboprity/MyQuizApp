@@ -16,7 +16,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private static String TAG = MainActivity.class.getSimpleName();
-    private int number_of_correct_answer = 0;
+    private int numberOfCorrectAnswer = 0;
     private static final String answerFiveText = "Tiger";
 
     private RadioGroup radioGroup1, radioGroup2, radioGroup3;
@@ -94,33 +94,34 @@ public class MainActivity extends AppCompatActivity {
 
                 if(answer1 == radioOneTwo.getId()){
                     Log.d(TAG, "Answer 1 is correct");
-                    number_of_correct_answer += 1;
+                    numberOfCorrectAnswer += 1;
                 }
                 if(answer2 == radioTwoTwo.getId()){
                     Log.d(TAG, "Answer 2 is correct");
-                    number_of_correct_answer += 1;
+                    numberOfCorrectAnswer += 1;
                 }
                 if(answer3 == radioThreeFour.getId()){
                     Log.d(TAG, "Answer 3 is correct");
-                    number_of_correct_answer += 1;
+                    numberOfCorrectAnswer += 1;
                 }
 
                 if (checkFourOne.isChecked() && checkFourTwo.isChecked() && !checkFourThree.isChecked() &&
                         !checkFourFour.isChecked() && checkFourFive.isChecked() && checkFourSix.isChecked()) {
                     Log.d(TAG, "Answer 4 is correct");
-                    number_of_correct_answer += 1;
+                    numberOfCorrectAnswer += 1;
                 }
 
                 if(editFiveString.equalsIgnoreCase(answerFiveText)) {
                     Log.d(TAG, "Answer 5 is correct");
-                    number_of_correct_answer += 1;
+                    numberOfCorrectAnswer += 1;
                 }
 
 
                 questionLayout.setVisibility(View.GONE);
                 resultTextView.setVisibility(View.VISIBLE);
                 viewScore.setVisibility(View.GONE);
-                resultTextView.setText(getString(R.string.score_text, number_of_correct_answer));
+                resultTextView.setText(getString(R.string.score_text, numberOfCorrectAnswer));
+                Toast.makeText(getApplicationContext(), getString(R.string.score_text, numberOfCorrectAnswer), Toast.LENGTH_SHORT).show();
 
                 Log.d(TAG, "viewScore.setOnClickListener: Ended");
             }
@@ -132,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Log.d(TAG, "resetAnswer.setOnClickListener: started");
 
-                number_of_correct_answer = 0;
+                numberOfCorrectAnswer = 0;
 
                 radioGroup1.clearCheck();
                 radioGroup2.clearCheck();
